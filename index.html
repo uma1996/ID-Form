@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <h3>Employee Id Card Form</h3>
+    <form novalidate>
+            <div class="input-group">
+                <label for="firstName">First Name : </label>
+                <input type="text" id="firstName" required><br>
+                <span class="span-for-errors" id="errForFirstName">Please enter your preferred name as first name</span>
+            </div>
+            <div class="input-group">
+                <label for="fullName">Full Name : </label>
+                <input type="text" id="fullName" required><br>
+                <span class="span-for-errors" id="errForFullName">Please enter your full name</span>
+            </div>
+            <div class="input-group">
+                    <label for="designation">Designation : </label>
+                    <input type="text" id="designation" required><br>
+                    <span class="span-for-errors" id="errForDesig">Please enter your designation</span>
+            </div>
+
+            <div class="form-group">
+                <label for="emp_no">Employee Code :</label>
+                <input type="text" id="emp_no" class="forms-group" required>
+                <span class="span-for-errors" id="errorMessageForEmployeeNumber">Enter valid employee Code</span><br/><br/> 
+            </div>
+            <div class="form-group">
+                <label for="blood">Blood Group :</label>
+                <input type="text" id="blood" class="forms-group" required>
+                <span class="span-for-errors" id="errorEmployeeBloodGroup">Enter your blood group</span><br/><br/> 
+            </div>
+            <div class="form-group">
+                <label for="issues">Reasons for Issues :</label>
+                <select id="issues" class="forms-group" required>
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="New Employee" checked>New Employee</option>
+                    <option value="Lost">Lost</option>
+                    <option value="Defaced">Defaced</option>
+                    <option value="Conversion">Conversion</option>
+                    <option value="Designation Change">Designation Change</option>
+                  </select> 
+                  <span class="span-for-errors" id="errorMessageForReasonsforIssues">select your Reason for Issues</span><br/><br/> 
+            </div><br>
+           
+            <div class="form-group">
+                    <label for="email">Email ID(Virtusa) :</label>
+                    <input type="text" id="email" class="forms-group" required>
+                    <span class="span-for-errors" id="errorMessageEmailID">Enter your valid Email ID</span><br/><br/> 
+
+            </div><br>
+            <div class="form-group">
+                    <label for="mobile">Employee Mobile Number :</label>
+                    <input type="text" id="mobile" class="forms-group" required>
+                  <span class="span-for-errors" id="errorMessageForEmployeeMobileNumber">Enter your valid Mobile Number</span><br/><br/> 
+                    
+            </div><br>
+            <div class="form-group">
+                    <label for="emergency">Emergency Contact Number :</label>
+                    <input type="text" id="emergency" class="forms-group" required>
+                  <span class="span-for-errors" id="errorMessageForEmployeeEmergencyContactNumber">Enter your valid Contact Number</span><br/><br/> 
+                    
+            </div>
+
+            <button type="button" onclick="addDetails()">Add Details</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/app.js "></script>
+    </body>
+</html>

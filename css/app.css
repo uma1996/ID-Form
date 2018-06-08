@@ -1,0 +1,31 @@
+.input-group{
+    text-align: left;
+    display: block;
+}
+input:required:invalid {
+    border: 1px solid red;
+}
+.span-for-errors{
+    display: none;
+}
+.body{
+    text-align: center;
+    /* text-decoration-color: darkred;
+    text-align: 57; */
+}
+
+.form-group
+{
+	display: block;
+	text-align: left;
+}
+.error
+{
+   border: 1px solid red;
+}
+
+.forms-group
+{
+	justify-content: space-evenly;
+	align-self: auto;
+}
